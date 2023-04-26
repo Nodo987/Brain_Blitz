@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/6168860.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Brain Blitz</title>
+</head>
+<body>
+    
+    <!--this is parent element for all project elements-->
+    <div class="not_started_game_parent_Element" id="starting_screen">
+
+        <!--This is memory game header-->
+        <header class="Header_style">
+
+            <!--Game Title-->
+            <p class="Game_title">Brain Blitz</p>
+
+        </header>
+
+        <!--This is actual game container-->
+        <div class="Memory_Game_Container">
+
+            <!--this is memory game body part-->
+            <div class="Memory_game_body_part">
+
+                <!--They are containers for game starting options-->
+                <div class="Starting_option">
+
+                    <!--this is title for option section-->
+                    <p class="option_section_title">Select Theme</p>
+
+                    <!--Options Container-->
+                    <div class="Options">
+
+                        <!--Single Options-->
+                        <button class="Single_option active_Option_button choose_game_theme" value="numbers">Numbers</button>
+                        <button class="Single_option choose_game_theme" value="icons">Icons</button>
+
+                    </div>
+
+                </div>
+                <div class="Starting_option">
+
+                    <!--this is title for option section-->
+                    <p class="option_section_title">Numbers of Players</p>    
+
+                     <!--Options-->
+                     <div class="Options">
+
+                        <!--Single Options-->
+                        <button class="Single_option single_Option_with_four_brother_element_in_same_Div active_Option_button Choose_number_of_players" value="1">1</button>
+                        <button class="Single_option single_Option_with_four_brother_element_in_same_Div Choose_number_of_players" value="2">2</button>
+                        <button class="Single_option single_Option_with_four_brother_element_in_same_Div Choose_number_of_players" value="3">3</button>
+                        <button class="Single_option single_Option_with_four_brother_element_in_same_Div Choose_number_of_players" value="4">4</button>
+
+                     </div>
+
+                </div>
+                <div class="Starting_option">
+
+                    <!--this is title for option section-->
+                    <p class="option_section_title">Grid Size</p>
+
+                     <!--Options-->
+                     <div class="Options">
+
+                        <!--Single Options-->
+                        <button class="Single_option active_Option_button Choose_grid_size" value="4x4">4x4</button>
+                        <button class="Single_option Choose_grid_size" value="6x6">6x6</button>
+
+                     </div>
+
+                </div>
+
+                <!--This is Start Button for game-->
+                <button class="Starting_button start_btn" >Start Game</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+     <!--here starts started game container-->
+    <div class="Started_game_parent_element Display_off" id="started_game">
+
+        <div class="Black_background Display_off" id="Black_background"></div>
+
+        <!--started game header section-->
+        <div class="Started_Game_Header">
+
+                <!--Started game header text-->
+                <p class="Game_title font_color_blue">Brain Blitz</p>
+
+                <!--Started game header buttons container-->
+                <div class="Started_game_buttons_container">
+
+                    <!--restart game with curren options button-->
+                    <button class="Restart_game_btn active_game_header_buttons restart_btn">Restart</button>
+
+                    <!--Start new game Button-->
+                    <button class="Start_new_game_btn active_game_header_buttons start_btn">New Game</button>
+
+                    <button class="Restart_game_btn active_game_header_buttons  Menu_btn Display_block">Menu</button>
+                </div>
+        </div>
+
+        <!--started game body part on 4x4 grid size-->
+        <div class="Started_Game_body_for_4x4_grid_size_container Display_off started_game_body">
+
+            <!--containers for game elements row 1-->
+            <div class="Game_Elements_Containers element4x4"></div>
+            <div class="Game_Elements_Containers element4x4"></div>
+            <div class="Game_Elements_Containers element4x4"></div>
+            <div class="Game_Elements_Containers element4x4"></div>
+
+             <!--containers for game elements row 2-->
+            <div class="Game_Elements_Containers element4x4"></div>
+            <div class="Game_Elements_Containers element4x4"></div>
+            <div class="Game_Elements_Containers element4x4"></div>
+            <div class="Game_Elements_Containers element4x4"></div>
+
+             <!--containers for game elements row 3-->
+            <div class="Game_Elements_Containers element4x4"></div>
+            <div class="Game_Elements_Containers element4x4"></div>
+            <div class="Game_Elements_Containers element4x4"></div>
+            <div class="Game_Elements_Containers element4x4"></div>
+
+             <!--containers for game elements row 4-->
+            <div class="Game_Elements_Containers element4x4"></div>
+            <div class="Game_Elements_Containers element4x4"></div>
+            <div class="Game_Elements_Containers element4x4"></div>
+            <div class="Game_Elements_Containers element4x4"></div>
+
+        </div>
+
+        <!--started game body part on 6x6 grid size-->
+        <div class="Started_Game_body_for_6x6_grid_size_container started_game_body">
+
+            <!--containers for game elements row 1-->
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+
+             <!--containers for game elements row 2-->
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+
+             <!--containers for game elements row 3-->
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+
+             <!--containers for game elements row 4-->
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+
+            <!--containers for game elements row 5-->
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+
+            <!--containers for game elements row 6-->
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+            <div class="Game_Elements_Containers element6x6"></div>
+
+        </div>
+
+        <!--div which shows Number and stats of players-->
+        <div class="players_stats">
+
+            <!--if game is single player-->
+            <div class="player_stats_container number_of_player">
+
+                <!--this is container for timer-->
+                <div class="Stats_box">
+
+                    <!--text for this container-->
+                    <p class="Stats_small_text">Time</p>
+    
+                    <!--Actuall timer-->
+                    <p class="Stats_count_text" id="Timer_placeholder">00:00</p>
+    
+                </div>
+
+                <!--This is player movies counter container-->
+                <div class="Stats_box">
+
+                    <!--This is text for this container-->
+                    <p class="Stats_small_text">Movies</p>
+
+                    <!--this is count of player movies-->
+                    <p class="Stats_count_text" id="singlePlayerMoveAmount">0</p>
+
+                </div>
+
+            </div>
+
+            <!--if number of players is two-->
+            <div class="player_stats_container Display_off number_of_player">
+
+                <!--player one container-->
+                <div class="Stats_box player_stats_two_player">
+
+                    <!--this is player number text-->
+                    <p class="Stats_small_text">Player 1</p>
+
+                    <!--this is player movies count-->
+                    <p class="Stats_count_text Move_count_for_two_players">0</p>
+
+                </div>
+
+                <!--player two container-->
+                <div class="Stats_box player_stats_two_player">
+
+                    <!--this is player number text-->
+                    <p class="Stats_small_text">Player 2</p>
+
+                    <!--this is player movies count-->
+                    <p class="Stats_count_text Move_count_for_two_players">0</p>
+
+                </div>
+
+            </div>
+
+             <!--if number of players is three-->
+             <div class="player_stats_container Display_off number_of_player">
+
+                <!--player one container-->
+                <div class="Stats_box player_stats_three_player">
+
+                    <!--this is player number text-->
+                    <p class="Stats_small_text">Player 1</p>
+
+                    <!--this is player movies count-->
+                    <p class="Stats_count_text Move_count_for_three_players">0</p>
+
+                </div>
+
+                <!--player two container-->
+                <div class="Stats_box player_stats_three_player">
+
+                    <!--this is player number text-->
+                    <p class="Stats_small_text">Player 2</p>
+
+                    <!--this is player movies count-->
+                    <p class="Stats_count_text Move_count_for_three_players">0</p>
+
+                </div>
+
+                <!--player three container-->
+                <div class="Stats_box player_stats_three_player">
+
+                    <!--this is player number text-->
+                    <p class="Stats_small_text">Player 3</p>
+
+                    <!--this is player movies count-->
+                    <p class="Stats_count_text Move_count_for_three_players">0</p>
+
+                </div>
+
+            </div>
+
+            <!--if number of players is four-->
+            <div class="player_stats_container Display_off number_of_player">
+
+                <!--player one container-->
+                <div class="Stats_box player_stats_four_player">
+
+                    <!--this is player number text-->
+                    <p class="Stats_small_text">Player 1</p>
+
+                    <!--this is player movies count-->
+                    <p class="Stats_count_text Move_count_for_four_players">0</p>
+
+                </div>
+
+                <!--player two container-->
+                <div class="Stats_box player_stats_four_player">
+
+                    <!--this is player number text-->
+                    <p class="Stats_small_text">Player 2</p>
+
+                    <!--this is player movies count-->
+                    <p class="Stats_count_text Move_count_for_four_players">0</p>
+
+                </div>
+
+                <!--player three container-->
+                <div class="Stats_box player_stats_four_player">
+
+                    <!--this is player number text-->
+                    <p class="Stats_small_text">Player 3</p>
+
+                    <!--this is player movies count-->
+                    <p class="Stats_count_text Move_count_for_four_players">0</p>
+
+                </div>
+
+                 <!--player four container-->
+                 <div class="Stats_box player_stats_four_player">
+
+                    <!--this is player number text-->
+                    <p class="Stats_small_text">Player 4</p>
+
+                    <!--this is player movies count-->
+                    <p class="Stats_count_text Move_count_for_four_players">0</p>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+        <!--this is single player game over tab-->
+        <div class="Game_over_tab Display_off" >
+
+            <!--Main header for game over tab-->
+            <p class="Game_title font_color_blue">You did it</p>
+
+            <!--Secondary text for game over tab-->
+            <p class="Stats_small_text">Game over! Here's how you got on…</p>
+            
+            <!--Container for player stats-->    
+            <div class="Player_stats_for_game_over_tab">
+
+                <!--this container shows How much time player needed to beat level-->
+                <div class="Timer_final_time_container Stats_box width_auto">
+
+                    <!--this is text for this div-->
+                    <p class="Stats_small_text">Time Elapsed</p> 
+
+                    <!--this is final time-->
+                    <p class="Stats_count_text" id="Time_needed_for_singleplayer_game_over_tab">01 : 25 </p>
+
+                </div>
+
+                <!--this div shows how many movies player done in game-->
+                <div class="Moves_Taken Stats_box width_auto">
+
+                    <!--this is title text for this div-->
+                    <p class="Stats_small_text">Moves Taken</p>
+
+                    <!--this is actual count of moves-->
+                    <p class="Stats_count_text" id="Moves_count_for_singleplayer_game_over_tab">25 Moves</p>
+
+                </div>
+
+            </div>
+
+            <!--Game over buttons container-->
+            <div class="Started_game_buttons_container">
+
+                <!--restart game with curren options button-->
+                <button class="Restart_game_btn active_game_header_buttons restart_btn btn_for_game_over_screen">Restart</button>
+
+                <!--Start new game Button-->
+                <button class="Start_new_game_btn active_game_header_buttons start_btn btn_for_game_over_screen">New Game</button>
+
+            </div>
+
+        </div>
+
+          <!--this is multyplayer game over tab-->
+          <div class="Game_over_tab Display_off" >
+
+            <!--Main header for game over tab-->
+            <p class="Game_title font_color_blue" id="Placeholder_for_winner_name_text">Player 3 wins</p>
+
+            <!--Secondary text for game over tab-->
+            <p class="Stats_small_text">Game over! Here's how you got on…</p>
+            
+            <!--Container for player stats-->    
+            <div class="Player_stats_for_game_over_tab" id="container_for_player_stats">
+
+                
+
+            </div>
+
+            <!--Game over buttons container-->
+            <div class="Started_game_buttons_container">
+
+                <!--restart game with curren options button-->
+                <button class="Restart_game_btn active_game_header_buttons restart_btn btn_for_game_over_screen">Restart</button>
+
+                <!--Start new game Button-->
+                <button class="Start_new_game_btn active_game_header_buttons start_btn btn_for_game_over_screen">New Game</button>
+
+            </div>
+
+        </div>
+
+        <!--container for menu section-->
+        <div class="Paused_Game_Container Game_over_tab Display_off">
+
+            <!--restart game with curren options button-->
+            <button class="Restart_game_btn active_game_header_buttons restart_btn">Restart</button>
+
+            <!--Start new game Button-->
+            <button class="Start_new_game_btn active_game_header_buttons start_btn">New Game</button>
+
+            <!--resume game btn-->
+            <button class="Start_new_game_btn active_game_header_buttons resume_btn">Resume Game</button>
+            
+        </div>
+
+    </div>
+        
+
+    <!--linking Javascript-->
+    <script src="./script.js"></script>
+
+</body>
+</html>
